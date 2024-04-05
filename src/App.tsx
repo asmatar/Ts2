@@ -11,7 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/other" element={<div>Other</div>} />
+        <Route path="/:postid" element={<div>post detail</div>} />
+        <Route path="/postblog" element={<div>postblog</div>} />
       </Routes>
       <Footer />
     </>

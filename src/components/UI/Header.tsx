@@ -21,7 +21,7 @@ const Header = () => {
               to="/other"
               className={({ isActive }) => (isActive ? "text-blue-500" : "")}
             >
-              otherpage
+              postblog
             </NavLink>
           </li>
         </ul>

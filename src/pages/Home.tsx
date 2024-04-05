@@ -1,5 +1,11 @@
+import PostCardList from "../components/PostCardList.tsx";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <PostCardList />
+    </main>
+  );
 };
 
 export default Home;
