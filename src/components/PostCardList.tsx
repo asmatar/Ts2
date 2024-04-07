@@ -11,10 +11,10 @@ import Spinner from "./Spinner.tsx";
 }; */
 
 export interface CardProps {
-  id: string;
-  title: string;
-  body: string;
-  userId: string;
+  id: number;
+  title?: string;
+  body?: string;
+  userId: number;
 }
 
 const PostCardList = () => {
@@ -32,6 +32,7 @@ const PostCardList = () => {
 
   if (isLoading) return <Spinner />;
   if (error) return <div>A error occur, please check your code</div>;
+  console.log(AllPost);
   return (
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       {AllPost?.map((post: CardProps) => <PostCards key={post.id} {...post} />)}

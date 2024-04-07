@@ -18,7 +18,7 @@ const Header = () => {
           </li>
           <li className="uppercase text-white">
             <NavLink
-              to="/other"
+              to="/createPost"
               className={({ isActive }) => (isActive ? "text-blue-500" : "")}
             >
               postblog
